@@ -25,8 +25,6 @@ class Login extends Component{
 
       
       Login(){
-          const usuario = this.state.user.nombre;
-          var contraseña = this.state.user.pass
              
           console.log('Nombre:',this.state.user.nombre);  
           console.log('password:',this.state.user.pass);
@@ -35,7 +33,6 @@ class Login extends Component{
 
         
    render() {
-      // const {nombre, pass}= this.state;  
     return(<Fragment>
                  <div className ="row" >
                     <div className="card-header" style={{ marginLeft: "400px", marginRight: "400px", background:"#0f2537", fontSize: 30, textAlign: "center", color:"white" }}>
@@ -55,7 +52,7 @@ class Login extends Component{
                              </div>
                         </div>
                         <div >
-                             <button onClick={this.Login} >Login   </button>
+                             <button variant="primary" onClick={this.Login} >Login   </button>
                         </div>
                         
                     </div>   
